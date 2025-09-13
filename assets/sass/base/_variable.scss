@@ -1,66 +1,65 @@
 :root {
-  --theme-color         : #109C3D;
-  --secondary-color     : #042A2F;
-  --title-color         : #063A41;
-  --title-color2        : #67B846;
-  --text-color          : #5E5C78;
+  --theme-color: #109c3d;
+  --secondary-color: #042a2f;
+  --title-color: #063a41;
+  --title-color2: #67b846;
+  --text-color: #5e5c78;
   // --text-color       : #596768;
-  --text-color2         : #C7C7C7;
-  --body-color          : #042A2F;
-  --smoke-color         : #f1f5f4;
-  --light-color         : #E6EAEB;
-  --black-color         : #1C2438;
-  --white-color         : #ffffff;
-  --yellow-color        : #fec624;
-  --success-color       : #28a745;
-  --error-color         : #dc3545;
-  --border-color        : #CDD5D6;
-  --title-font          : "Rajdhani", sans-serif;
-  --title-font2         : "Rajdhani", sans-serif;
-  --body-font           : "Rajdhani", sans-serif;
-  --icon-font           : 'Font Awesome 6 Pro';
-  --main-container      : 1300px;
-  --main-container2     : 1530px;
-  --main-container3     : 1920px;
+  --text-color2: #c7c7c7;
+  --body-color: #042a2f;
+  --smoke-color: #f1f5f4;
+  --light-color: #e6eaeb;
+  --black-color: #1c2438;
+  --white-color: #ffffff;
+  --yellow-color: #fec624;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --border-color: #cdd5d6;
+  --title-font: 'Rajdhani', sans-serif;
+  --title-font2: 'Rajdhani', sans-serif;
+  --body-font: 'Rajdhani', sans-serif;
+  --icon-font: 'Font Awesome 6 Pro';
+  --main-container: 1300px;
+  --main-container2: 1530px;
+  --main-container3: 1920px;
   // --main-container3     : 1730px;
-  --main-container4     : 1470px;
-  --main-container5     : 1594px;
-  --container-gutters   : 15px;
-  --section-space       : 120px;
+  --main-container4: 1470px;
+  --main-container5: 1594px;
+  --container-gutters: 15px;
+  --section-space: 120px;
   --section-space-mobile: 80px;
-  --section-title-space : 60px;
-  --ripple-ani-duration : 5s;
+  --section-title-space: 60px;
+  --ripple-ani-duration: 5s;
 }
 
 // Color Variation
-$theme-color          : var(--theme-color);
-$secondary-color      : var(--secondary-color);
-$light-color          : var(--light-color);
-$title-color          : var(--title-color);
-$title-color2         : var(--title-color2);
-$text-color           : var(--text-color);
-$text-color2          : var(--text-color2);
-$body-color           : var(--body-color);
-$smoke-color          : var(--smoke-color);
-$white-color          : var(--white-color);
-$black-color          : var(--black-color);
-$yellow-color         : var(--yellow-color);
-$success-color        : var(--success-color);
-$error-color          : var(--error-color);
-$border-color         : var(--border-color);
+$theme-color: var(--theme-color);
+$secondary-color: var(--secondary-color);
+$light-color: var(--light-color);
+$title-color: var(--title-color);
+$title-color2: var(--title-color2);
+$text-color: var(--text-color);
+$text-color2: var(--text-color2);
+$body-color: var(--body-color);
+$smoke-color: var(--smoke-color);
+$white-color: var(--white-color);
+$black-color: var(--black-color);
+$yellow-color: var(--yellow-color);
+$success-color: var(--success-color);
+$error-color: var(--error-color);
+$border-color: var(--border-color);
 
 // Font Variation
-$icon-font   : var(--icon-font);
+$icon-font: var(--icon-font);
 
 // Typography
-$title-font      : var(--title-font);
-$title-font2      : var(--title-font2);
-$body-font       : var(--body-font);
-$body-font-size  : 16px;
+$title-font: var(--title-font);
+$title-font2: var(--title-font2);
+$body-font: var(--body-font);
+$body-font-size: 16px;
 $body-line-Height: 28px;
 $body-font-weight: 400;
-$p-line-Height   : 1.8;
-
+$p-line-Height: 1.8;
 
 // Device Variation
 $hd: 1921px; // Large Device Than 1920
@@ -76,55 +75,63 @@ $xs: 575px; // Extra Small Device
 $space-count: 5;
 
 // Section Space  For large Device
-$space         : var(--section-space);
-$space-extra   : calc(var(--section-space) - 30px);
+$space: var(--section-space);
+$space-extra: calc(var(--section-space) - 30px);
 
 // Section Space On small Device
-$space-mobile         : var(--section-space-mobile);
+$space-mobile: var(--section-space-mobile);
 $space-mobile-extra: calc(var(--section-space-mobile) - 30px);
 $section-title-space: var(--section-title-space);
 
+// BG Color Mapping
+$bgcolorMap: ();
+$bgcolorMap: map-merge(
+  (
+    'theme': $theme-color,
+    'smoke': $smoke-color,
+    'vs-light': $light-color,
+    'white': $white-color,
+    'black': $black-color,
+    'title': $title-color,
+    'theme2': $secondary-color,
+  ),
+  $bgcolorMap
+);
 
-// BG Color Mapping 
-$bgcolorMap  : ();
-$bgcolorMap  : map-merge((
-  "theme"    : $theme-color,
-  "smoke"    : $smoke-color,
-  "vs-light"    : $light-color,
-  "white"    : $white-color,
-  "black"    : $black-color,
-  "title"    : $title-color,
-  "theme2"    : $secondary-color,
-), $bgcolorMap);
+// Overlay Color Mapping
+$overlaycolorMap: ();
+$overlaycolorMap: map-merge(
+  (
+    'theme': $theme-color,
+    'title': $title-color,
+    'white': $white-color,
+    'black': $black-color,
+  ),
+  $overlaycolorMap
+);
 
+// Text Color Mapping
+$textColorsMap: ();
+$textColorsMap: map-merge(
+  (
+    'theme': $theme-color,
+    'title': $title-color,
+    'body': $body-color,
+    'white': $white-color,
+    'yellow': $yellow-color,
+    'success': $success-color,
+    'error': $error-color,
+  ),
+  $textColorsMap
+);
 
-// Overlay Color Mapping 
-$overlaycolorMap : ();
-$overlaycolorMap : map-merge((
-  "theme"        : $theme-color,
-  "title"        : $title-color,
-  "white"        : $white-color,
-  "black"        : $black-color,
-), $overlaycolorMap);
-
-
-// Text Color Mapping 
-$textColorsMap : ();
-$textColorsMap : map-merge((
-  "theme"      : $theme-color,
-  "title"      : $title-color,
-  "body"       : $body-color,
-  "white"      : $white-color,
-  "yellow"     : $yellow-color,
-  "success"    : $success-color,
-  "error"      : $error-color), 
-$textColorsMap);
-
-
-// Font Mapping 
-$fontsMap    : ();
-$fontsMap    : map-merge((
-  "icon"     : $icon-font,
-  "title"    : $title-font,
-  "body"     : $body-font,
-), $fontsMap);
+// Font Mapping
+$fontsMap: ();
+$fontsMap: map-merge(
+  (
+    'icon': $icon-font,
+    'title': $title-font,
+    'body': $body-font,
+  ),
+  $fontsMap
+);
