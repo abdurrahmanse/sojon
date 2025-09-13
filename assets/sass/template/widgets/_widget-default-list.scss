@@ -3,7 +3,6 @@
 .widget_meta,
 .widget_archive,
 .widget_categories {
-
   ul {
     padding: 0;
     margin: -0.4em 0 0 0;
@@ -26,7 +25,7 @@
       margin-bottom: 0;
     }
   }
-  
+
   a {
     position: relative;
     color: #444444;
@@ -34,7 +33,7 @@
     margin-bottom: 12px;
     display: block;
     &:before {
-      content: "\f105";
+      content: '\f105';
       position: absolute;
       left: 0;
       top: -1px;
@@ -66,7 +65,7 @@
   li {
     display: block;
     position: relative;
-    >span {
+    > span {
       width: 44px;
       height: 44px;
       line-height: 44px;
@@ -86,7 +85,6 @@
   }
 }
 
-
 .widget_categories {
   ul {
     margin: 0;
@@ -102,14 +100,14 @@
     font-size: 16px;
     padding: 5px 0px 18px 0px;
     margin-bottom: 12px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1;
     line-height: 160%;
     transition: color ease 0.2s, background-color ease 0.4s;
-    &:hover{
+    &:hover {
       color: $theme-color;
     }
-    i{
+    i {
       font-size: 14px;
       margin-left: 20px;
       color: $theme-color;
@@ -118,14 +116,11 @@
     }
   }
 
-  
-
   li {
     display: block;
     position: relative;
 
-
-    >span {
+    > span {
       font-size: 14px;
       font-weight: 700;
       color: $title-color;
@@ -142,10 +137,10 @@
       position: absolute;
       bottom: 0;
     }
-    
+
     &:hover {
       color: $theme-color;
-      span{
+      span {
         color: $theme-color;
       }
     }
@@ -168,18 +163,17 @@
     border-bottom: 1px solid #d9d9d9;
     display: block;
     padding-left: 0;
-    
+
     &:after,
     &:before {
       display: none;
     }
   }
 
-
-  >ul {
+  > ul {
     margin-bottom: -0.3em;
-    
-    >li {
+
+    > li {
       &:last-child {
         a {
           border-bottom: none;
@@ -189,7 +183,6 @@
       }
     }
   }
-
 }
 
 .widget_nav_menu {

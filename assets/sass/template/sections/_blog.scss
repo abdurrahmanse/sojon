@@ -93,11 +93,11 @@ blockquote.vs-quote {
     color: #74787c;
     font-family: $title-font;
     display: block;
-    font-weight: 400;
+    font-weight: 500;
   }
 }
-.wp-block-image{
-  img{
+.wp-block-image {
+  img {
     width: 100%;
     border-radius: 30px;
   }
@@ -128,7 +128,7 @@ blockquote.vs-quote {
 
   a:hover {
     color: $theme-color;
-    i{
+    i {
       color: $theme-color;
     }
   }
@@ -226,7 +226,6 @@ blockquote.vs-quote {
   }
 }
 
-
 .blog-inner-author {
   font-size: 16px;
   text-transform: uppercase;
@@ -234,33 +233,33 @@ blockquote.vs-quote {
   color: $title-color;
   font-weight: 600;
   margin-bottom: 6px;
-  span{
+  span {
     line-height: 160%;
     display: inline-flex;
-    a{
+    a {
       margin-left: 6px;
     }
-    &:hover{
+    &:hover {
       color: $title-color;
     }
   }
   a {
     color: $theme-color;
-    i{
+    i {
       margin-right: 8px;
     }
-    &:hover{
+    &:hover {
       color: $title-color;
     }
   }
 
   .blog-date {
     line-height: 160%;
-    &:not(:first-child){
+    &:not(:first-child) {
       margin-left: 14px;
     }
   }
-  
+
   img {
     width: 67px;
     height: 67px;
@@ -274,15 +273,15 @@ blockquote.vs-quote {
 .blog-single {
   position: relative;
   margin-bottom: 50px;
-  
-  .blog-links{
+
+  .blog-links {
     display: flex;
     justify-content: space-between;
-    .link-btn{
+    .link-btn {
       font-size: 16px;
       text-transform: uppercase;
       font-weight: 700;
-      i{
+      i {
         color: $theme-color;
         font-weight: 700;
         margin-right: 0;
@@ -291,7 +290,7 @@ blockquote.vs-quote {
       }
     }
   }
-  
+
   .blog-title {
     font-size: 36px;
     margin-bottom: 25px;
@@ -306,13 +305,12 @@ blockquote.vs-quote {
     font-weight: 500;
   }
 
-
   .blog-img {
     position: relative;
     background-color: $smoke-color;
     margin: -1px;
     border-radius: 20px;
-    img{
+    img {
       width: 100%;
       border-radius: 20px;
     }
@@ -380,13 +378,12 @@ blockquote.vs-quote {
   }
 }
 
-
-.list-style1{
-  .list-unstyled{
-    img{
+.list-style1 {
+  .list-unstyled {
+    img {
       margin-right: 15px;
     }
-    li{
+    li {
       margin-bottom: 10px;
     }
   }
@@ -485,36 +482,36 @@ blockquote.vs-quote {
   }
 }
 
-.vs-blog{
-  &__style1{
+.vs-blog {
+  &__style1 {
     border-radius: 30px;
     background-color: $white-color;
     padding: 15px;
     box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.09);
     margin-bottom: 10px;
-    .blog-img{
+    .blog-img {
       border-radius: 15px;
       overflow: hidden;
       position: relative;
-      &::after{
+      &::after {
         content: '';
         position: absolute;
         left: 0;
         bottom: 0;
         width: 100%;
         height: 100%;
-        background: rgb(16,156,61);
-        background: linear-gradient(0deg, rgba(16,156,61,0.29735644257703087) 0%, rgba(255,255,255,0) 95%);
+        background: rgb(16, 156, 61);
+        background: linear-gradient(0deg, rgba(16, 156, 61, 0.29735644257703087) 0%, rgba(255, 255, 255, 0) 95%);
       }
-      
-      img{
+
+      img {
         width: 100%;
         transform: scale(1);
         transition: all 0.5s ease;
         position: relative;
       }
     }
-    .blog-cate{
+    .blog-cate {
       position: absolute;
       bottom: 0;
       background-color: $theme-color;
@@ -529,43 +526,43 @@ blockquote.vs-quote {
       transition: all 0.5s ease;
       clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
       z-index: 1;
-      &:hover{
+      &:hover {
         background-color: $title-color;
       }
     }
-    .blog-inner-author{
-      .blog-date{
-        color: #5F5D76;
+    .blog-inner-author {
+      .blog-date {
+        color: #5f5d76;
         text-transform: capitalize;
-        &:hover{
+        &:hover {
           color: $theme-color;
         }
       }
-      i{
+      i {
         color: $theme-color;
       }
     }
-    .blog-title{
+    .blog-title {
       font-size: 26px;
       font-weight: 600;
       line-height: normal;
     }
-    .blog-content{
+    .blog-content {
       padding: 27px 22px 25px 22px;
     }
-    &:hover{
-      .blog-img{
-        img{
+    &:hover {
+      .blog-img {
+        img {
           transform: scale(1.1);
         }
       }
-      .blog-btn{
-        &::before{
+      .blog-btn {
+        &::before {
           background-color: $theme-color;
         }
       }
     }
-    &.style2{
+    &.style2 {
       padding: 16px;
       .blog-content {
         padding: 25px 20px 25px 0px;
@@ -574,17 +571,17 @@ blockquote.vs-quote {
   }
 }
 
-.blog-btn{
+.blog-btn {
   position: relative;
-  .link-btn{
-    .icon{
+  .link-btn {
+    .icon {
       border: 1.9px dashed $theme-color;
       display: inline-block;
       border-radius: 50%;
       margin-right: 14px;
       transition: all 0.5s ease;
     }
-    i{
+    i {
       width: 40px;
       height: 40px;
       line-height: 40px;
@@ -595,21 +592,21 @@ blockquote.vs-quote {
       text-align: center;
       transition: all 0.5s ease;
     }
-    &:hover{
-      .icon{
+    &:hover {
+      .icon {
         border-color: $title-color;
       }
-      i{
+      i {
         background-color: $title-color;
       }
     }
   }
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     width: 26%;
     height: 2px;
-    background-color: #8DB69A;
+    background-color: #8db69a;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -631,14 +628,12 @@ blockquote.vs-quote {
 
     .blog-title {
       font-size: 30px;
-    }    
+    }
   }
   .vs-blog__style1 .blog-title {
     font-size: 24px;
   }
 }
-
-
 
 @include sm {
   blockquote.vs-quote {
@@ -658,7 +653,7 @@ blockquote.vs-quote {
     display: block;
     margin: 0 0 10px 0;
   }
-  
+
   .blog-single {
     --blog-space-y: 40px;
     --blog-space-x: 20px;
@@ -675,11 +670,11 @@ blockquote.vs-quote {
     }
 
     .blog-meta {
-      >span,
+      > span,
       a {
-        &:not(:last-child){
+        &:not(:last-child) {
           &:after {
-            content: "";
+            content: '';
             margin: 0 10px 0 14px;
           }
         }
@@ -704,4 +699,3 @@ blockquote.vs-quote {
     }
   }
 }
-

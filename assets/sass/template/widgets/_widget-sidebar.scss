@@ -6,7 +6,7 @@
   input {
     height: 38px;
     border: none;
-    background-color: var(--input-bg, #F0F4F5);
+    background-color: var(--input-bg, #f0f4f5);
     // border-radius: 9999px;
   }
 }
@@ -29,13 +29,13 @@
     color: $theme-color;
   }
 }
-.widget_about{
+.widget_about {
   margin-bottom: 40px;
 }
-.widget_search{
+.widget_search {
   margin-bottom: 0;
 }
-.widget_gallery{
+.widget_gallery {
   margin-bottom: 50px;
 }
 
@@ -45,7 +45,6 @@
     display: flex;
     border-bottom: 2px solid $border-color;
     padding-bottom: 15px;
-    
 
     input {
       flex: 1;
@@ -58,10 +57,10 @@
       height: 100%;
       font-family: $body-font;
       &::placeholder {
-        color: #8B9595;
+        color: #8b9595;
         letter-spacing: 0.4px;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         text-transform: capitalize;
       }
     }
@@ -84,14 +83,14 @@
   }
 }
 
-.widget_about{
-  .title{
+.widget_about {
+  .title {
     font-size: 24px;
     font-weight: 600;
     line-height: 140%;
     margin-bottom: 13px;
   }
-  .text{
+  .text {
     line-height: 160%;
     margin-bottom: 0;
   }
@@ -100,7 +99,7 @@
     border-radius: 0 100px 0 0;
     width: 100%;
   }
-} 
+}
 
 .sidebar-gallery {
   display: grid;
@@ -121,7 +120,7 @@
     }
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0;
@@ -140,8 +139,7 @@
       top: 50%;
       width: var(--icon-size, 35px);
       height: var(--icon-size, 35px);
-      margin: calc(var(--icon-size, 35px) / -2) 0 0
-        calc(var(--icon-size, 35px) / -2);
+      margin: calc(var(--icon-size, 35px) / -2) 0 0 calc(var(--icon-size, 35px) / -2);
       text-align: center;
       font-size: 18px;
       color: var(--white-color);
@@ -187,7 +185,7 @@
     display: inline-block;
     border: none;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1;
     padding: 9.5px 16.5px;
     margin-right: 5px;
@@ -217,7 +215,7 @@
     margin: 0;
     border-radius: 3px;
     padding: 11px 12px;
-    border: 1px solid #DBE1E2;
+    border: 1px solid #dbe1e2;
   }
 }
 
@@ -260,7 +258,7 @@
 
       i {
         margin-right: 5px;
-        color: $theme-color
+        color: $theme-color;
       }
     }
   }
@@ -268,16 +266,15 @@
 
 .sidebar-area {
   margin-bottom: -10px;
-  .newsletter-form{
-    .vs-btn{
-      &:hover{
+  .newsletter-form {
+    .vs-btn {
+      &:hover {
         color: $secondary-color;
         background-color: $white-color;
       }
     }
   }
 }
-
 
 .widget_newsletter {
   background-color: $secondary-color;
@@ -308,13 +305,11 @@
     background-color: $theme-color;
     border-color: $theme-color;
     width: 100%;
-    &:hover{
+    &:hover {
       border-color: $white-color;
     }
   }
-
 }
-
 
 .widget_shopping_cart {
   text-align: left;
@@ -370,7 +365,7 @@
   .product-title {
     font-size: 14px;
     color: $title-color;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0;
     display: inline-block;
   }
@@ -454,10 +449,10 @@
   .buttons {
     margin: 0;
     gap: 15px;
-    .vs-btn{
+    .vs-btn {
       background-color: $theme-color;
       border-color: $theme-color;
-      &:hover{
+      &:hover {
         background-color: $secondary-color;
         border-color: $secondary-color;
       }
@@ -496,12 +491,11 @@
   }
 }
 
-
-.share-box{
+.share-box {
   position: relative;
-  ul{
+  ul {
     margin: 0;
-    li{
+    li {
       padding: 0;
       list-style: none;
     }
@@ -524,7 +518,7 @@
     transition: all 0.3s ease-in-out;
     &::after {
       position: absolute;
-      content: "";
+      content: '';
       background-color: transparent;
       bottom: -7px;
       right: 0px;
@@ -533,10 +527,10 @@
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
       border-top: 6px solid $border-color;
+    }
   }
-  }
-  &:hover{
-    ul{
+  &:hover {
+    ul {
       opacity: 1;
     }
   }
@@ -555,7 +549,6 @@
     }
   }
 }
-
 
 @include md {
   .sidebar-area {

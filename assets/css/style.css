@@ -105,7 +105,7 @@ body {
 body {
   font-family: var(--body-font);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--body-color);
   background-color: var(--white-color);
   background-color: var(--white-color);
@@ -983,7 +983,7 @@ textarea.is-invalid {
   position: absolute;
   right: 0;
   top: 50%;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   width: 25px;
   height: 25px;
@@ -1582,7 +1582,7 @@ textarea.is-invalid {
 }
 
 .fw-normal {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .fw-medium {
@@ -2319,7 +2319,7 @@ a.text-theme:hover,
   font-size: 16px;
   padding: 5px 0px 18px 0px;
   margin-bottom: 12px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   line-height: 160%;
   transition: color ease 0.2s, background-color ease 0.4s;
@@ -2458,7 +2458,7 @@ a.text-theme:hover,
   color: #8b9595;
   letter-spacing: 0.4px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: capitalize;
 }
 .widget .search-form button {
@@ -2566,7 +2566,7 @@ a.text-theme:hover,
   display: inline-block;
   border: none;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   padding: 9.5px 16.5px;
   margin-right: 5px;
@@ -2725,7 +2725,7 @@ a.text-theme:hover,
 .widget_shopping_cart .product-title {
   font-size: 14px;
   color: var(--title-color);
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0;
   display: inline-block;
 }
@@ -4417,7 +4417,7 @@ blockquote.vs-quote .quote-author {
   color: #74787c;
   font-family: var(--title-font);
   display: block;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .wp-block-image img {
@@ -5501,7 +5501,7 @@ blockquote.vs-quote .quote-author {
 .error-area__text {
   text-transform: uppercase;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 2px;
   font-family: var(--body-font);
   line-height: 132%;
@@ -7593,7 +7593,7 @@ blockquote.vs-quote .quote-author {
 .progress-box.style2 .progress-box__title,
 .progress-box.style2 .progress-box__number {
   color: var(--body-color);
-  font-weight: 400;
+  font-weight: 500;
   font-family: var(--body-font);
 }
 .progress-box.style2 .progress-box__progress,

@@ -28,8 +28,8 @@
         }
 
         // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "(yourmail)@gmail.com";
+    // Primary recipient for contact form submissions
+    $recipient = "info@sojon.com";
 
         // Set the email subject.
         $subject = "New contact from $subject";
