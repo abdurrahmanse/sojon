@@ -3362,42 +3362,7 @@ a.text-theme:hover,
   flex-wrap: wrap;
   gap: 10px;
 }
-.header-icons .searchBoxTggler {
-  color: var(--title-color);
-  font-size: 18px;
-  border: none;
-  padding-left: 0;
-  margin-right: 12px;
-  padding-right: 20px;
-  background-color: transparent;
-  position: relative;
-}
-.header-icons .searchBoxTggler:hover {
-  color: var(--theme-color);
-}
-.header-icons .searchBoxTggler i {
-  font-weight: 700;
-}
-.header-icons .searchBoxTggler::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 1.5px;
-  height: 32px;
-  background-color: #B4C4C6;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.header-icons .searchBoxTggler::after {
-  content: "";
-  position: absolute;
-  right: -3px;
-  width: 1px;
-  height: 22px;
-  background-color: #B4C4C6;
-  top: 50%;
-  transform: translateY(-50%);
-}
+.header-icons { gap: 12px; }
 .header-icons .icon-btn {
   color: var(--white-color);
   margin-right: 20px;
@@ -3421,9 +3386,6 @@ a.text-theme:hover,
 .vs-header .sticky-wrapper.style2 .header-icons .icon-btn {
   border: 3.5px solid var(--white-color);
   line-height: 63px;
-}
-.vs-header .sticky-wrapper.style2 .searchBoxTggler {
-  color: var(--white-color);
 }
 .vs-header .sticky-wrapper.style2 .header-inner {
   background-color: var(--white-color);
@@ -3466,9 +3428,6 @@ a.text-theme:hover,
   background-color: unset;
   border-right: none;
 }
-.vs-header .sticky-wrapper.style2 .sticky-active.active .header-icons .searchBoxTggler i {
-  color: var(--title-color);
-}
 .vs-header .sticky-wrapper.style2 .sticky-active.active .header-icons .icon-btn {
   border-color: var(--theme-color);
 }
@@ -3486,12 +3445,6 @@ a.text-theme:hover,
 }
 .vs-header .sticky-wrapper.style2 .sticky-active.active .header-inner .contact-content .contact-title a:hover {
   color: var(--theme-color);
-}
-.vs-header .sticky-wrapper.style2 .header-icons .searchBoxTggler::after {
-  background-color: #456B71;
-}
-.vs-header .sticky-wrapper.style2 .header-icons .searchBoxTggler::before {
-  background-color: #456B71;
 }
 .vs-header .will-sticky .sticky-active.active .menu-area {
   margin-bottom: 0;
