@@ -79,9 +79,9 @@ Version: 1.0.0
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: #cdd5d6;
-  --title-font: 'Rubik', serif;
-  --title-font2: 'Fuzzy Bubbles', sans-serif;
-  --body-font: 'Poppins', serif;
+  --title-font: 'Rajdhani', sans-serif;
+  --title-font2: 'Rajdhani', sans-serif;
+  --body-font: 'Rajdhani', sans-serif;
   --icon-font: 'Font Awesome 6 Pro';
   --main-container: 1300px;
   --main-container2: 1530px;
@@ -3789,9 +3789,6 @@ a.text-theme:hover,
 @media (max-width: 1199px) {
   .main-menu > ul > li {
     margin: 0 10px;
-  }
-  .header-icons .searchBoxTggler {
-    display: none;
   }
   .vs-header .header-logo::before {
     right: -15%;
@@ -8843,112 +8840,7 @@ blockquote.vs-quote .quote-author {
   background-color: var(--white-color);
 }
 
-/*------------------- 4.27. popupsearch Sections  -------------------*/
-.popup-search-box {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  background-color: rgba(0, 0, 0, 0.95);
-  height: 0;
-  width: 0;
-  overflow: hidden;
-  z-index: 99999;
-  opacity: 0;
-  visibility: hidden;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  transition: all ease 0.4s;
-}
-.popup-search-box button.searchClose {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  border: none;
-  background-color: var(--secondary-color);
-  color: var(--white-color);
-  font-size: 30px;
-  border-radius: 50%;
-  transition: all ease 0.4s;
-}
-.popup-search-box button.searchClose i {
-  line-height: inherit;
-}
-.popup-search-box button.searchClose:hover {
-  color: var(--white-color);
-  background-color: var(--theme-color);
-}
-.popup-search-box form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: inline-block;
-  padding-bottom: 40px;
-  cursor: auto;
-  width: 100%;
-  max-width: 700px;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform ease 0.4s;
-  /* Large devices */
-}
-@media (max-width: 1199px) {
-  .popup-search-box form {
-    max-width: 600px;
-  }
-}
-.popup-search-box form input {
-  font-size: 14px;
-  height: 70px;
-  width: 100%;
-  border: 2px solid var(--white-color);
-  background-color: transparent;
-  padding-left: 30px;
-  color: #fff;
-  border-radius: 50px;
-}
-.popup-search-box form input::-moz-placeholder {
-  color: #fff;
-}
-.popup-search-box form input::-webkit-input-placeholder {
-  color: #fff;
-}
-.popup-search-box form input:-ms-input-placeholder {
-  color: #fff;
-}
-.popup-search-box form input::placeholder {
-  color: #fff;
-}
-.popup-search-box form button {
-  position: absolute;
-  top: 0px;
-  background-color: transparent;
-  border: none;
-  font-size: 20px;
-  right: 13px;
-  color: var(--white-color);
-  cursor: pointer;
-  width: 70px;
-  height: 70px;
-  transition: all ease 0.4s;
-  transform: scale(1.001);
-}
-.popup-search-box form button:hover {
-  transform: scale(1.1);
-}
-.popup-search-box.show {
-  opacity: 1;
-  visibility: visible;
-  width: 100.1%;
-  height: 100%;
-  transition: all ease 0.4s;
-  border-radius: 0;
-}
-.popup-search-box.show form {
-  transition-delay: 0.5s;
-  transform: translate(-50%, -50%) scale(1);
-}
+/* (Removed popup search styles as feature deprecated) */
 
 /*------------------- 4.28. Popup Side Menu  -------------------*/
 .sidemenu-wrapper {

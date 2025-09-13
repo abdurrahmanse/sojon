@@ -578,29 +578,7 @@
     $('.sideCart-wrapper').toggleClass('show')
   }
 
-  /*---------- 13. Search Box Popup ----------*/
-  function popupSarchBox($searchBox, $searchOpen, $searchCls, $toggleCls) {
-    $($searchOpen).on('click', function (e) {
-      e.preventDefault()
-      $($searchBox).addClass($toggleCls)
-    })
-    $($searchBox).on('click', function (e) {
-      e.stopPropagation()
-      $($searchBox).removeClass($toggleCls)
-    })
-    $($searchBox)
-      .find('form')
-      .on('click', function (e) {
-        e.stopPropagation()
-        $($searchBox).addClass($toggleCls)
-      })
-    $($searchCls).on('click', function (e) {
-      e.preventDefault()
-      e.stopPropagation()
-      $($searchBox).removeClass($toggleCls)
-    })
-  }
-  popupSarchBox('.popup-search-box', '.searchBoxTggler', '.searchClose', 'show')
+  // (search popup feature removed)
 
   /*---------- 14. Lenis Library Support ----------*/
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText)
