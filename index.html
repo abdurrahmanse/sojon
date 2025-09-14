@@ -84,6 +84,9 @@
         }
         </script>
 
+    <!-- Preload LCP Hero Background -->
+    <link rel="preload" as="image" href="assets/img/bg/hero-bg-1.jpg">
+
 </head>
 
 <body>
@@ -289,10 +292,10 @@
                         <div class="vs-hero__image position-relative">
                             <div class="main-img vs-carousel" data-fade="true" data-autoplay="true">
                                 <div class="slide-item">
-                                    <img src="assets/img/hero/hero-img-1-1.png" alt="Hero Image">
+                                    <img src="assets/img/hero/hero-img-1-1.png" alt="Hero Image" fetchpriority="high" loading="eager">
                                 </div>
                                 <div class="slide-item">
-                                    <img src="assets/img/hero/hero-img-1-2.png" alt="Hero Image">
+                                    <img src="assets/img/hero/hero-img-1-2.png" alt="Hero Image" loading="lazy">
                                 </div>
                             </div>
                             <span class="shape-mockup hero-shep3 custome-sheap1 wow animate__zoomIn"

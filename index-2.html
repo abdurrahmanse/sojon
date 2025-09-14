@@ -84,6 +84,9 @@
         }
         </script>
 
+    <!-- Preload LCP Hero Background -->
+    <link rel="preload" as="image" href="assets/img/bg/hero-bg-2.jpg">
+
 </head>
 
 <body>
@@ -328,7 +331,7 @@
                     <div class="col-lg-5">
                         <div class="vs-hero__image position-relative wow animate__fadeInRight" data-wow-delay="0.1s">
                             <div class="main-img">
-                                <img src="assets/img/hero/hero-img-2-1.png" alt="Hero Image">
+                                <img src="assets/img/hero/hero-img-2-1.png" alt="Hero Image" fetchpriority="high" loading="eager">
                             </div>
                             <span class="shape-mockup hero-shep5 spin d-xl-block d-none"
                                 style="right: 50px; top: -10px;"><img src="assets/img/shapes/circle-1.png"
