@@ -34,24 +34,29 @@
   $(window).on('load', function () {
     // Define GSAP animation for the preloader
     if ($('.preloader').length) {
-      gsap.to('.preloader', {
-        y: '-100%',
-        duration: 1.2,
-        ease: 'power3.inOut',
-        onComplete: function () {
-          $('.preloader').hide() // Hide preloader after animation
-        },
-      })
+      var isSmallScreen = window.matchMedia('(max-width: 767px)').matches
+      if (isSmallScreen) {
+        $('.preloader').hide()
+      } else {
+        gsap.to('.preloader', {
+          y: '-100%',
+          duration: 0.6,
+          ease: 'power3.inOut',
+          onComplete: function () {
+            $('.preloader').hide()
+          },
+        })
+      }
 
       // Handle preloader close event
       $('.preloaderCls').on('click', function (e) {
         e.preventDefault() // Prevent default action
         gsap.to('.preloader', {
           y: '-100%',
-          duration: 1.2,
+          duration: 0.3,
           ease: 'power3.inOut',
           onComplete: function () {
-            $('.preloader').hide() // Hide preloader after animation
+            $('.preloader').hide()
           },
         })
       })
@@ -207,16 +212,21 @@
   })
 
   /*---------- 05. Set Background Image ----------*/
-  if ($('[data-bg-src]').length > 0) {
-    $('[data-bg-src]').each(function () {
-      var src = $(this).attr('data-bg-src')
-      $(this).css('background-image', 'url(' + src + ')')
-      $(this).removeAttr('data-bg-src').addClass('background-image')
-    })
-  }
+  document.addEventListener('DOMContentLoaded', function () {
+    if ($('[data-bg-src]').length > 0) {
+      $('[data-bg-src]').each(function () {
+        var src = $(this).attr('data-bg-src')
+        if (src) {
+          $(this).css('background-image', 'url(' + src + ')')
+          $(this).removeAttr('data-bg-src').addClass('background-image')
+        }
+      })
+    }
+  })
 
   /*----------- 06. Global Slider ----------*/
-  $('.vs-carousel').each(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    $('.vs-carousel').each(function () {
     var asSlide = $(this)
 
     // Collect Data
@@ -250,7 +260,7 @@
       }
     }
 
-    asSlide.slick({
+  asSlide.slick({
       dots: d('dots') ? true : false,
       fade: d('fade') ? true : false,
       arrows: d('arrows') ? true : false,
@@ -347,6 +357,7 @@
       ],
     })
   })
+  })
 
   /*----------- 07. Ajax Contact Form ----------*/
   var form = '.ajax-contact'
@@ -442,17 +453,19 @@
   })
 
   /*----------- 08. Magnific Popup ----------*/
-  /* magnificPopup img view */
-  $('.popup-image').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true,
-    },
-  })
+  document.addEventListener('DOMContentLoaded', function () {
+    /* magnificPopup img view */
+    $('.popup-image').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true,
+      },
+    })
 
-  /* magnificPopup video view */
-  $('.popup-video').magnificPopup({
-    type: 'iframe',
+    /* magnificPopup video view */
+    $('.popup-video').magnificPopup({
+      type: 'iframe',
+    })
   })
 
   /*---------- 09. Popup Sidemenu ----------*/
@@ -583,23 +596,27 @@
   /*---------- 14. Lenis Library Support ----------*/
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText)
 
-  const lenis = new Lenis({
-    lerp: 0.1,
-    touchMultiplier: 0,
-    smoothWheel: true,
-    smoothTouch: false,
-    mouseWheel: false,
-    autoResize: true,
-    smooth: true,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    syncTouch: true,
-  })
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const isSmallScreenSmooth = window.matchMedia('(max-width: 767px)').matches
+  if (!prefersReduced && !isSmallScreenSmooth) {
+    const lenis = new Lenis({
+      lerp: 0.1,
+      touchMultiplier: 0,
+      smoothWheel: true,
+      smoothTouch: false,
+      mouseWheel: false,
+      autoResize: true,
+      smooth: true,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      syncTouch: true,
+    })
 
-  lenis.on('scroll', ScrollTrigger.update)
+    lenis.on('scroll', ScrollTrigger.update)
 
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1200)
-  })
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1200)
+    })
+  }
 
   /*---------- 15. Split Text Animation With GSAP Plugins ----------*/
   gsap.config({
@@ -769,7 +786,7 @@
   }
 
   // Attach event listeners
-  window.addEventListener('scroll', throttle(updateProgress, 50))
+  window.addEventListener('scroll', throttle(updateProgress, 50), { passive: true })
   backToTopBtn.addEventListener('click', scrollToTop)
 
   // Initial update to set the correct progress on page load

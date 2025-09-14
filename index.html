@@ -45,8 +45,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap">
+    </noscript>
 
 
     <!--==============================
@@ -85,7 +90,8 @@
         </script>
 
     <!-- Preload LCP Hero Background -->
-    <link rel="preload" as="image" href="assets/img/bg/hero-bg-1.jpg">
+    <link rel="preload" as="image" href="assets/img/bg/hero-bg-1.jpg" imagesrcset="assets/img/bg/hero-bg-1.jpg 1920w"
+        imagesizes="100vw">
 
 </head>
 
@@ -270,7 +276,8 @@
 	  ******************************** -->
     <!-- Hero Area -->
     <section id="main" class="vs-hero__layout1" data-wow-delay="0.25s">
-        <div class="vs-hero__item" data-bg-src="assets/img/bg/hero-bg-1.jpg">
+        <div class="vs-hero__item" data-bg-src="assets/img/bg/hero-bg-1.jpg"
+            style="background-image:url('assets/img/bg/hero-bg-1.jpg');">
             <div class="main-container3 position-relative z-index">
                 <div class="row justify-content-end align-items-center">
                     <div class="col-lg-6 position-relative">
@@ -292,22 +299,25 @@
                         <div class="vs-hero__image position-relative">
                             <div class="main-img vs-carousel" data-fade="true" data-autoplay="true">
                                 <div class="slide-item">
-                                    <img src="assets/img/hero/hero-img-1-1.png" alt="Hero Image" fetchpriority="high"
-                                        loading="eager">
+                                    <img src="assets/img/hero/hero-img-1-1.png" alt="Hero Image" width="800"
+                                        height="720" fetchpriority="high" decoding="async" loading="eager">
                                 </div>
                                 <div class="slide-item">
-                                    <img src="assets/img/hero/hero-img-1-2.png" alt="Hero Image" loading="lazy">
+                                    <img src="assets/img/hero/hero-img-1-2.png" alt="Hero Image" width="800"
+                                        height="720" decoding="async" loading="lazy">
                                 </div>
                             </div>
                             <span class="shape-mockup hero-shep3 custome-sheap1 wow animate__zoomIn"
                                 data-wow-delay="0.90s" style="left: -50px; bottom: 0;"><img
-                                    src="assets/img/shapes/hero-shep-1-1.svg" alt="hero element"></span>
+                                    src="assets/img/shapes/hero-shep-1-1.svg" alt="hero element" width="140"
+                                    height="140" decoding="async"></span>
                             <span class="shape-mockup hero-shep4 custome-sheap1 wow animate__zoomIn"
                                 data-wow-delay="0.80s" style="left: -130px; bottom: 0;"><img
-                                    src="assets/img/shapes/hero-shep-1-2.svg" alt="hero element"></span>
+                                    src="assets/img/shapes/hero-shep-1-2.svg" alt="hero element" width="140"
+                                    height="140" decoding="async"></span>
                             <span class="shape-mockup hero-shep5 spin d-lg-block d-none"
                                 style="left: 75px; top: 90px;"><img src="assets/img/shapes/circle-1.png"
-                                    alt="hero element"></span>
+                                    alt="hero element" width="120" height="120" decoding="async"></span>
                         </div>
                     </div>
                 </div>
@@ -323,7 +333,8 @@
             <div class="bubble"></div>
         </div>
         <span class="shape-mockup wow animate__fadeInLeft" data-wow-delay="0.80s" style="left: 0px; top: 60px;"><img
-                src="assets/img/shapes/hero-sheap3.png" alt="Hero element"></span>
+                src="assets/img/shapes/hero-sheap3.png" alt="Hero element" width="220" height="200"
+                decoding="async"></span>
     </section>
     <!-- Hero Area End -->
     <!-- Counter Area -->
@@ -333,8 +344,8 @@
                 <div class="col-md-auto">
                     <div class="vs-counter__inner">
                         <div class="play-video">
-                            <a href="https://www.youtube.com/watch?v=moYayPRgaY0" class="play-btn2 popup-video"><i
-                                    class="fas fa-play"></i></a>
+                            <a href="https://www.youtube.com/watch?v=moYayPRgaY0" class="play-btn2 popup-video"
+                                target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i></a>
                         </div>
                         <div class="vs-counter__content">
                             <div class="wow animate__fadeInUp" data-wow-delay="0.25s">
@@ -1186,23 +1197,11 @@
     <script src="assets/js/lenis.min.js" defer></script>
     <!-- wow js -->
     <script src="assets/js/wow.min.js" defer></script>
-    <!-- Main Js File -->
-    <script src="assets/js/main.js" defer></script>
-
-
-    <script src="assets/js/vendor/jquery-3.7.1.min.js" defer></script>
-    <script src="assets/js/slick.min.js" defer></script>
-    <script src="assets/js/bootstrap.min.js" defer></script>
-    <script src="assets/js/jquery.magnific-popup.min.js" defer></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js" defer></script>
-    <script src="assets/js/gsap.min.js" defer></script>
-    <script src="assets/js/ScrollTrigger.min.js" defer></script>
-    <script src="assets/js/gsap-scroll-to-plugin.js" defer></script>
-    <script src="assets/js/SplitText.js" defer></script>
-    <script src="assets/js/lenis.min.js" defer></script>
-    <script src="assets/js/wow.min.js" defer></script>
+    <!-- Helpers should load before main -->
     <script src="assets/js/webp-helper.js" defer></script>
     <script src="assets/js/a11y.js" defer></script>
+    <script src="assets/js/perf.js" defer></script>
+    <!-- Main Js File -->
     <script src="assets/js/main.js" defer></script>
 </body>
 
