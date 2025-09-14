@@ -188,7 +188,12 @@
     }
     lastScrollTop = st
   }
+  // Throttle scroll handler to reduce reflow/layout thrash
+  var _lastCall = 0
   $(window).on('scroll', function () {
+    var now = Date.now()
+    if (now - _lastCall < 100) return
+    _lastCall = now
     stickyMenu($('.sticky-active'), 'active', 'will-sticky')
     if ($(this).scrollTop() > 500) {
       $(scrollToTopBtn).addClass('show')

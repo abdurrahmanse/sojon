@@ -48,7 +48,9 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" as="style" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -122,7 +124,7 @@
                         </ul>
                     </li>
                     <li class="menu-item-has-children mega-menu-wrap">
-                        <a href="#">Pages</a>
+                        <button class="menu-toggle-link" aria-expanded="false" aria-haspopup="true">Pages</button>
                         <ul class="mega-menu">
                             <li><a href="service.html">Explore Programs</a>
                                 <ul>
@@ -181,9 +183,9 @@
                         <div class="social-style1">
                             <span class="social-title">Follow Us On :</span>
                             <div class="social-icon">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://facebook.com/sojon" target="_blank" rel="noopener" aria-label="Sojon on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="https://linkedin.com/company/sojon" target="_blank" rel="noopener" aria-label="Sojon on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                                <a href="https://instagram.com/sojon" target="_blank" rel="noopener" aria-label="Sojon on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -241,7 +243,7 @@
                                     </div>
                                     <div class="contact-content">
                                         <p class="contact-text">Call Helpline</p>
-                                        <h6 class="contact-title"><a href="tel:+012325621563">01705952160</a></h6>
+                                        <h6 class="contact-title"><a href="tel:+8801705952160">01705952160</a></h6>
                                     </div>
                                 </div>
                             </div>

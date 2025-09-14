@@ -65,7 +65,9 @@
     <!-- animate js -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" as="style" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
     <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -257,11 +259,11 @@
                             <div class="col-auto d-lg-block d-none">
                                 <div class="header-inner">
                                     <div class="header-icons">
-                                        <a class="icon-btn" href="#"><i class="fa-solid fa-phone"></i></a>
+                                        <a class="icon-btn" href="tel:+8801705952160"><i class="fa-solid fa-phone" aria-hidden="true"></i><span class="visually-hidden">Call</span></a>
                                     </div>
                                     <div class="contact-content">
                                         <p class="contact-text">Call Helpline</p>
-                                        <h6 class="contact-title"><a href="tel:+012325621563">01705952160</a></h6>
+                                        <h6 class="contact-title"><a href="tel:+8801705952160">01705952160</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -428,7 +430,7 @@
                                     <span class="icon"><img src="assets/img/icon/call-icon.svg" alt="icon"></span>
                                     <div class="contact-content">
 
-                                        <h6 class="contact-title"><a href="#">01705952160</a></h6>
+                                        <h6 class="contact-title"><a href="tel:+8801705952160">01705952160</a></h6>
                                         <p class="contact-text">call 24/7</p>
                                     </div>
                                 </div>
@@ -456,8 +458,8 @@
                                 <li><a href="contact.html">Contact Us</a></li>
                                 <li><a href="donate.html">Donate to Sojon</a></li>
                                 <li><a href="blog.html">Blog</a></li>
-                                <li><a href="#">Volunteer With Us</a></li>
-                                <li><a href="#">Partner With Sojon</a></li>
+                                <li><a href="contact.html">Volunteer With Us</a></li>
+                                <li><a href="contact.html">Partner With Sojon</a></li>
                                 <li><a href="service.html">Explore Programs</a></li>
                                 <li><a href="contact.html">Contact Our Team</a></li>
                             </ul>

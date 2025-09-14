@@ -55,6 +55,77 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       } catch (_) {}
     })
+
+    // Provide accessible names for icon-only links/buttons
+    var actionable = document.querySelectorAll('a[href], button')
+    actionable.forEach(function (el) {
+      try {
+        var name = (el.textContent || '').trim()
+        var hasName = name.length > 0 || el.getAttribute('aria-label') || el.getAttribute('title')
+        if (!hasName) {
+          if (el.tagName === 'A') {
+            var href = el.getAttribute('href') || ''
+            if (href && href !== '#' && !href.startsWith('javascript:')) {
+              var label = el.getAttribute('data-label') || el.getAttribute('title')
+              if (!label) {
+                try {
+                  var urlPart = href.split('#')[0].split('?')[0].split('/').pop() || href
+                  label = urlPart.replace(/[-_]/g, ' ').replace(/\.[a-zA-Z0-9]+$/, '')
+                } catch (e) {
+                  label = 'Link'
+                }
+              }
+              el.setAttribute('aria-label', label)
+            } else {
+              el.setAttribute('aria-label', 'Link')
+            }
+          } else if (el.tagName === 'BUTTON') {
+            var blabel = el.getAttribute('data-label') || el.getAttribute('title') || 'Button'
+            el.setAttribute('aria-label', blabel)
+          }
+        }
+      } catch (_) {}
+    })
+
+    // Label selects without an associated <label>
+    var selects = document.querySelectorAll('select')
+    selects.forEach(function (sel) {
+      try {
+        var id = sel.getAttribute('id')
+        var hasLabel = false
+        if (id) {
+          var lab = document.querySelector('label[for="' + id + '"]')
+          hasLabel = !!lab
+        }
+        var hasAria = sel.hasAttribute('aria-label') || sel.hasAttribute('aria-labelledby')
+        if (!hasLabel && !hasAria) {
+          var aria = sel.getAttribute('name') || (sel.options[0] ? sel.options[0].text : 'Select')
+          sel.setAttribute('aria-label', aria)
+        }
+      } catch (_) {}
+    })
+
+    // Label inputs and textareas using placeholder or name when no label exists
+    var controls = document.querySelectorAll('input, textarea')
+    controls.forEach(function (ctrl) {
+      try {
+        // Ignore inputs with type hidden or submit/reset/button
+        var type = (ctrl.getAttribute('type') || '').toLowerCase()
+        if (['hidden', 'submit', 'reset', 'button', 'image'].indexOf(type) !== -1) return
+
+        var id = ctrl.getAttribute('id')
+        var hasLabel = false
+        if (id) {
+          var lab = document.querySelector('label[for="' + id + '"]')
+          hasLabel = !!lab
+        }
+        var hasAria = ctrl.hasAttribute('aria-label') || ctrl.hasAttribute('aria-labelledby')
+        if (!hasLabel && !hasAria) {
+          var label = ctrl.getAttribute('placeholder') || ctrl.getAttribute('name') || 'Input field'
+          ctrl.setAttribute('aria-label', label)
+        }
+      } catch (_) {}
+    })
   } catch (e) {
     // fail silently
   }

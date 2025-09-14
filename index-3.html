@@ -68,7 +68,9 @@
     <!-- animate js -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" as="style" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
 
     <!-- Organization Schema -->
     <script type="application/ld+json">
@@ -475,7 +477,7 @@
                             <img src="assets/img/icon/author-icon.png" alt="author image">
                             <div class="contact-content">
                                 <p class="contact-text">Call Helpline</p>
-                                <h6 class="contact-title"><a href="tel:+012325621563">01705952160</a></h6>
+                                <h6 class="contact-title"><a href="tel:+8801705952160">01705952160</a></h6>
                             </div>
                         </div>
                         <div class="about-inner mb-0 wow animate__fadeInUp" data-wow-delay="0.25s">
@@ -1244,7 +1246,7 @@
                                     <span class="icon"><img src="assets/img/icon/call-icon.svg" alt="icon"></span>
                                     <div class="contact-content">
 
-                                        <h6 class="contact-title"><a href="#">01705952160</a></h6>
+                                        <h6 class="contact-title"><a href="tel:+8801705952160">01705952160</a></h6>
                                         <p class="contact-text">call 24/7</p>
                                     </div>
                                 </div>
@@ -1274,7 +1276,7 @@
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="portfolio.html">Projects & Impact</a></li>
                                 <li><a href="donate.html">Donate</a></li>
-                                <li><a href="#">Volunteer</a></li>
+                                <li><a href="contact.html#volunteer">Volunteer</a></li>
                             </ul>
                         </div>
                     </div>

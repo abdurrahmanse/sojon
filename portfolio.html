@@ -66,7 +66,9 @@
     <!-- animate js -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" as="style" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
     <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -262,7 +264,7 @@
                                     </div>
                                     <div class="contact-content">
                                         <p class="contact-text">Call Helpline</p>
-                                        <h6 class="contact-title"><a href="tel:+012325621563">01705952160</a></h6>
+                                        <h6 class="contact-title"><a href="tel:+8801705952160">01705952160</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -299,8 +301,7 @@
                     <div class="portfolio-style1">
                         <div class="portfolio-img">
                             <img src="assets/img/gallery/gallery-img-3-1.jpg" alt="gallery image" loading="lazy">
-                            <span class="icon icon-btn"><a href="#"><a href="#"><i
-                                            class="fa-solid fa-arrow-up"></i></a></a></span>
+                            <span class="icon icon-btn"><button type="button" class="btn-reset" aria-label="Scroll up"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button></span>
                         </div>
                         <div class="portfolio-content">
                             <p class="portfolio-subtitle">Education Program</p>
@@ -323,7 +324,7 @@
                     <div class="portfolio-style1">
                         <div class="portfolio-img">
                             <img src="assets/img/gallery/gallery-img-3-3.jpg" alt="gallery image" loading="lazy">
-                            <span class="icon icon-btn"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></span>
+                            <span class="icon icon-btn"><button type="button" class="btn-reset" aria-label="Scroll up"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button></span>
                         </div>
                         <div class="portfolio-content">
                             <p class="portfolio-subtitle">Livelihoods Project</p>
@@ -336,7 +337,7 @@
                     <div class="portfolio-style1">
                         <div class="portfolio-img">
                             <img src="assets/img/gallery/gallery-img-3-4.jpg" alt="gallery image" loading="lazy">
-                            <span class="icon icon-btn"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></span>
+                            <span class="icon icon-btn"><button type="button" class="btn-reset" aria-label="Scroll up"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button></span>
                         </div>
                         <div class="portfolio-content">
                             <p class="portfolio-subtitle">Education Program</p>
@@ -347,7 +348,7 @@
                     <div class="portfolio-style1">
                         <div class="portfolio-img">
                             <img src="assets/img/gallery/gallery-img-3-5.jpg" alt="gallery image" loading="lazy">
-                            <span class="icon icon-btn"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></span>
+                            <span class="icon icon-btn"><button type="button" class="btn-reset" aria-label="Scroll up"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button></span>
                         </div>
                         <div class="portfolio-content">
                             <p class="portfolio-subtitle">Public Health</p>
@@ -358,7 +359,7 @@
                     <div class="portfolio-style1">
                         <div class="portfolio-img">
                             <img src="assets/img/gallery/gallery-img-3-6.jpg" alt="gallery image" loading="lazy">
-                            <span class="icon icon-btn"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></span>
+                            <span class="icon icon-btn"><button type="button" class="btn-reset" aria-label="Scroll up"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button></span>
                         </div>
                         <div class="portfolio-content">
                             <p class="portfolio-subtitle">Education Program</p>
@@ -371,7 +372,7 @@
                     <div class="portfolio-style1">
                         <div class="portfolio-img">
                             <img src="assets/img/gallery/gallery-img-3-7.jpg" alt="gallery image" loading="lazy">
-                            <span class="icon icon-btn"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></span>
+                            <span class="icon icon-btn"><button type="button" class="btn-reset" aria-label="Scroll up"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button></span>
                         </div>
                         <div class="portfolio-content">
                             <p class="portfolio-subtitle">Livelihoods</p>
@@ -382,7 +383,7 @@
                     <div class="portfolio-style1">
                         <div class="portfolio-img">
                             <img src="assets/img/gallery/gallery-img-3-8.jpg" alt="gallery image" loading="lazy">
-                            <span class="icon icon-btn"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></span>
+                            <span class="icon icon-btn"><button type="button" class="btn-reset" aria-label="Scroll up"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button></span>
                         </div>
                         <div class="portfolio-content">
                             <p class="portfolio-subtitle">Public Health</p>
@@ -393,7 +394,7 @@
                     <div class="portfolio-style1">
                         <div class="portfolio-img">
                             <img src="assets/img/gallery/gallery-img-3-9.jpg" alt="gallery image" loading="lazy">
-                            <span class="icon icon-btn"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></span>
+                            <span class="icon icon-btn"><button type="button" class="btn-reset" aria-label="Scroll up"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button></span>
                         </div>
                         <div class="portfolio-content">
                             <p class="portfolio-subtitle">Community Development</p>
@@ -453,12 +454,9 @@
                                 <div class="social-style1">
                                     <span class="social-title">Follow On :</span>
                                     <div class="social-icon">
-                                        <a href="https://facebook.com/sojon" target="_blank" rel="noopener"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a href="https://linkedin.com/company/sojon" target="_blank" rel="noopener"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                        <a href="https://instagram.com/sojon" target="_blank" rel="noopener"><i
-                                                class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/sojon" target="_blank" rel="noopener" aria-label="Sojon on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://linkedin.com/company/sojon" target="_blank" rel="noopener" aria-label="Sojon on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/sojon" target="_blank" rel="noopener" aria-label="Sojon on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -473,8 +471,8 @@
                                 <li><a href="contact.html">Contact Us</a></li>
                                 <li><a href="donate.html">Donate to Sojon</a></li>
                                 <li><a href="blog.html">Blog</a></li>
-                                <li><a href="#">Volunteer With Us</a></li>
-                                <li><a href="#">Partner With Sojon</a></li>
+                                <li><a href="contact.html#volunteer">Volunteer With Us</a></li>
+                                <li><a href="contact.html#partnership">Partner With Sojon</a></li>
                                 <li><a href="service.html">Explore Programs</a></li>
                                 <li><a href="contact.html">Contact Our Team</a></li>
                             </ul>

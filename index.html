@@ -68,7 +68,9 @@
     <!-- animate js -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" as="style" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
 
     <!-- Organization Schema -->
     <script type="application/ld+json">
@@ -1098,7 +1100,7 @@
                                     <span class="icon"><img src="assets/img/icon/call-icon.svg" alt="icon"></span>
                                     <div class="contact-content">
 
-                                        <h6 class="contact-title"><a href="#">01705952160</a></h6>
+                                        <h6 class="contact-title"><a href="tel:+8801705952160">01705952160</a></h6>
                                         <p class="contact-text">Sunday–Thursday, 9am–5pm BST</p>
                                     </div>
                                 </div>
@@ -1128,8 +1130,8 @@
                                 <li><a href="service.html">Programs</a></li>
                                 <li><a href="portfolio.html">Projects & Impact</a></li>
                                 <li><a href="donate.html">Donate</a></li>
-                                <li><a href="#">Volunteer</a></li>
-                                <li><a href="#">Partner With Us</a></li>
+                                <li><a href="contact.html#volunteer">Volunteer</a></li>
+                                <li><a href="contact.html#partnership">Partner With Us</a></li>
                             </ul>
                         </div>
                     </div>
